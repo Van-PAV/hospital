@@ -1,0 +1,64 @@
+.btn {
+	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+	font: bold 14px Roboto;
+	min-width: 160px;
+	padding: (($base-spacing - 1) * 2) (($base-spacing - 1) * 4);
+	text-transform: uppercase;
+	@media (min-width: 768px) {
+		font: 500 18px Source Sans Pro;
+		min-width: 300px;
+		padding: (($base-spacing - 1) * 2.5) (($base-spacing - 1) * 4);
+	}
+}
+.btn-banner {
+	background: none;
+	border: 2px solid $dusty-orange;
+	border-radius: $border-radius-large;
+	color: $dusty-orange;
+	margin: 0 0 $base-spacing;
+	text-transform: uppercase;
+	width: 100%;
+	&:focus,
+  &:hover {
+    background: $dusty-orange;
+    color: $white;
+  }
+  @media (min-width: 768px) {
+  	margin: 0 ($base-spacing + 2);
+  	min-width: 300px;
+  	width: auto
+  }
+}
+.btn-full {
+	width: auto;
+	@media (min-width: 768px) {
+		padding-left: 0;
+		padding-right: 0;
+		width: 100%;
+	}
+}
+.btn-back-to-top {
+  backface-visibility: hidden;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 50%;
+  bottom: 30px;
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.15);
+  color: rgb(80, 86, 86);
+  display: none;
+  font-size: 22px;
+  height: 52px;
+  line-height: 52px;
+  margin: 0;
+  position: fixed;
+  right: 10px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.3s ease 0s;
+  width: 52px;
+  z-index: 99;
+  &:focus,
+  &:hover {
+    background-color: $brand-primary;
+    color: $white;
+  }
+}

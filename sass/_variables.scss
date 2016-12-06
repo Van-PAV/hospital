@@ -1,0 +1,42 @@
+//
+// Variables
+// --------------------------------------------------
+
+//== Colors
+$dusty-orange: 															 #f18b24;
+$white:                                      #fff;
+$white-three:																 #efefef;
+$black:                                      #000;
+$light-blue:                                 #eaf7ff;
+$light-gray:                                 #f2f2f2;
+$gray-dark:                                  #373a3c !default;
+$gray:                                       #f7f7f7 !default;
+$gray-light:                                 #818a91 !default;
+$gray-lighter:                               #eceeef !default;
+$gray-lightest:                              #f7f7f9 !default;
+
+$brand-primary:                              $dusty-orange;
+$text-color:                                 #4a4a4a;
+
+//=== Fonts
+$font-family-sans-serif:                    'Source Sans Pro', sans-serif;
+$font-size-base:                            14px;
+
+//=== Spacing
+$base-spacing:															8px;
+
+//=== Navigation
+$navbar-height:                    					96px !default;
+$mdb-brand-inverse:                         $white;
+$navbar-inverse-bg:                         $white;
+
+// Navbar brand
+$navbar-brand-padding-horizontal:					 ($font-size-base + 2)*2;
+
+// Inverted navbar links
+$navbar-inverse-link-color:                 $text-color;
+$navbar-inverse-link-active-bg:             $dusty-orange;
+
+//=== Footer 
+$footer-bg:																	#f3f3f3;
+

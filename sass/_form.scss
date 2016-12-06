@@ -1,0 +1,23 @@
+// Form
+.form-group{
+  margin: 0 0 ($base-spacing * 2);
+  .form-control {
+    background: none;
+    border: 2px solid $dusty-orange;
+    border-radius: 6px;
+    color: $text-color;
+    font-size: $font-size-base;
+    height: auto;
+    padding: (($base-spacing - 2) * 2) (($base-spacing - 2) * 3);
+    ::placeholder {
+      color: $text-color;
+      font-weight: 300 !important;
+    }
+    @media (min-width: 768px) {
+      font-size: 18px;
+      height: 60px;
+      padding: (($base-spacing - 2) * 2.5) (($base-spacing - 2) * 3);
+
+    }
+  }  
+}
