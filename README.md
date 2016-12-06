@@ -1,4 +1,4 @@
-iknow.com.vn
+Mizaya clinic
 ==
 1. Clone the code
 2. cd to folder
