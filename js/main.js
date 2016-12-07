@@ -32,6 +32,11 @@ jQuery(function($) {
     return false;
   });
 
+  $('.navbar a').click(function () {
+    $(".navbar-toggle").trigger( "click" );
+    console.log('clicked');
+  })
+
   // User define function
   function Scroll() {
     var contentTop      =   [];

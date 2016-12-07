@@ -1,0 +1,20 @@
+mixin item(imageName, title, content) 
+	.col-xs-12.col-sm-3.com-md-3
+		.item.text-center
+			img.img-responsive.u-display--inline-block.hidden-xs(src="/images/icons/#{imageName}.png", alt="")
+			.inner
+				h2 #{title}
+				p #{content}
+section.section.section-service#service
+	.section-header
+		.container
+			h2 Our services
+	.section-content
+		.container
+			.row
+				+item("healthycare", "Healthy care", "Etiam suscipit sem facilisis, vehicula est quis, vehicula lectus. Ut tempus ultrices ex pretium sollicitudin.")
+				+item("mriscan", "MRI Scanner", "Etiam suscipit sem facilisis, vehicula est quis, vehicula lectus. Ut tempus ultrices ex pretium sollicitudin.")
+				+item("ctscan", "CT Scanner", "Etiam suscipit sem facilisis, vehicula est quis, vehicula lectus. Ut tempus ultrices ex pretium sollicitudin.")
+				+item("eyecare", "Eye care", "Etiam suscipit sem facilisis, vehicula est quis, vehicula lectus. Ut tempus ultrices ex pretium sollicitudin.")
+
+				
