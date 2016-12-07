@@ -82,4 +82,7 @@ jQuery(function($) {
       });
     });
   });
+
+  //Count to
+  $('.number').countTo();
 });
