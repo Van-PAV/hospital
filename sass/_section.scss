@@ -2,7 +2,7 @@
   background-color: $white;
   padding: ($base-spacing * 4) 0;
   @media (min-width: 768px) {
-    padding: ($base-spacing * 7) 0;
+    padding: ($base-spacing * 6) 0;
   }
   .section-header {
     margin: 0 0 ($base-spacing * 4);
@@ -25,11 +25,11 @@
   }
   .section-content {
     p {
-      font: 300 14px/1.71 Source Sans Pro;
-      margin: 0 0 $base-spacing;
+      margin: 0 0 ($base-spacing * 2);
       @media (min-width: 768px) {
-        font: 300 18px/1.78 Source Sans Pro;
-        margin: 0 0 ($base-spacing * 2);
+        font-size: 14px;
+        font-weight: 300;
+        margin: 0 0 ($base-spacing * 3);
       }
     }
   }
@@ -38,6 +38,11 @@
 // Section: gray
 .section-gray {
   background-color: $gray;
+}
+
+// Section: Orange
+.section-orange {
+  background-color: $dusty-orange;
 }
 
 
