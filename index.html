@@ -8,11 +8,12 @@
     <meta name="keywords" content="Mizaya clinic">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="author" content="Mizaya clinic">
-    <link href="/css/styles.css" rel="stylesheet">
+    <link href="./css/styles.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
   </head>
 </html>
 <body>
-  <header id="home" class="header">
+  <header class="header" id="home">
     <div class="top-header">
       <div class="container">
         <ul>
@@ -22,12 +23,12 @@
     </div>
     <div class="container">
       <div class="col-md-12">
-        <div role="navigation" data-spy="affix" data-offset-top="200" class="navbar navbar-inverse sticky-navigation navbar-fixed-top affix">
+        <div class="navbar navbar-inverse sticky-navigation navbar-fixed-top affix" role="navigation" data-spy="affix" data-offset-top="200">
           <div class="container">
             <div class="navbar-header">
-              <button type="button" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar" class="navbar-toggle collapsed"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="/" class="navbar-brand logo">iknow</a>
+              <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand logo" href="/">iknow</a>
             </div>
-            <div id="navbar" class="navbar-collapse collapse">
+            <div class="navbar-collapse collapse" id="navbar">
               <ul class="nav navbar-nav navbar-right">
                 <li><a href="/#home">Home</a></li>
                 <li><a href="/#about">About Us</a></li>
@@ -48,9 +49,50 @@
           <div class="row">
             <div class="col-sm-12">
               <h1>Better technology for better healthcare</h1>
-              <div class="col-sm-12"><a href="#" class="btn btn-banner">Learn more</a></div>
+              <div class="col-sm-12"><a class="btn btn-banner" href="#">Learn more</a></div>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
+    <section class="section section-about home-about">
+      <div class="section-header">
+        <h2>About Us</h2>
+      </div>
+      <div class="section-content">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus efficitur vulputate tortor, ut viverra mauris bibendum et. Donec sed risus ut diam congue aliquam. Nam faucibus tristique ligula id iaculis. Mauris mollis in dolor ac pretium. Aenean neque velit, tempus quis nunc in, dictum varius nisl. Duis faucibus lacus in ante tincidunt lacinia. Nullam interdum nisi ac nibh aliquam consectetur. Nullam sapien dui, sagittis sit amet egestas nec, auctor et enim. Vivamus dui enim, feugiat a aliquet in, porta in leo. Aliquam mollis imperdiet mauris sit amet porta. Mauris nec interdum odio. Praesent neque nisi, scelerisque at finibus id, maximus vitae purus. Donec rhoncus orci a purus ultricies, quis pharetra sem viverra. Proin id rhoncus augue.</p>
+              <p>Praesent in dui eu quam auctor sagittis a vitae dolor. Cras augue arcu, fringilla quis sapien vitae, tempor viverra justo. Etiam tortor urna, dignissim ac dictum non, accumsan at ex. Nullam consectetur, mauris eget fringilla consectetur, nisi orci lacinia odio, vel euismod neque arcu et dolor. Duis ut arcu in nulla placerat pulvinar. Curabitur eget dolor vel ligula bibendum pellentesque. Nullam eget dictum felis. Mauris pretium, odio vitae consectetur faucibus, lacus nulla suscipit purus, a aliquet magna justo vitae risus. Donec ut maximus odio.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 box box-1"><i class="fa fa-medkit fa-3x"></i>
+          <h3>Emergency case</h3>
+          <p>Cras pharetra erat libero, eu bibendum augue venenatis quis. Duis eu felis quis nunc venenatis vulputate pretium quis est. Mauris pretium eget orci vitae lobortis. Etiam sed tristique neque.</p><a class="call-us btn btn-default" href="#">Call Us</a>
+        </div>
+        <div class="col-md-4 box box-2"><i class="fa fa-medkit fa-3x"></i>
+          <h3>Opening Hours</h3>
+          <p>Cras pharetra erat libero, eu bibendum augue venenatis quis.</p>
+          <div class="row"> 
+            <div class="left">Monday - Friday </div>
+            <div class="right">8.00 - 17.00</div>
+          </div>
+          <hr>
+          <div class="row">
+            <div class="left">Saturday </div>
+            <div class="right">8.30 - 14.30</div>
+          </div>
+          <hr>
+          <div class="row" style="margin-bottom: -16px">
+            <div class="left">Sunday </div>
+            <div class="right">9.00 - 17.00</div>
+          </div>
+        </div>
+        <div class="col-md-4 box box-1"><i class="fa fa-medkit fa-3x"></i>
+          <h3>Cancer case</h3>
+          <p>Cras pharetra erat libero, eu bibendum augue venenatis quis. Duis eu felis quis nunc venenatis vulputate pretium quis est. Mauris pretium eget orci vitae lobortis. Etiam sed tristique neque.</p><a class="call-us btn btn-default" href="#">Call Us</a>
         </div>
       </div>
     </section>
@@ -60,7 +102,7 @@
       <p class="text-center">@2016. All Rights Reserved</p>
     </div>
   </footer>
-  <script type="text/javascript" src="/js/jquery-3.1.0.min.js"></script>
-  <script type="text/javascript" src="/vendor/bootstrap/javascripts/bootstrap.min.js"></script>
-  <script type="text/javascript" src="/js/main.js"></script>
+  <script type="text/javascript" src="./js/jquery-3.1.0.min.js"></script>
+  <script type="text/javascript" src="./vendor/bootstrap/javascripts/bootstrap.min.js"></script>
+  <script type="text/javascript" src="./js/main.js"></script>
 </body>
