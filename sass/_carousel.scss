@@ -1,41 +1,60 @@
-.carousel {
-  .item {
-    text-align: center;
-  }
-}
-.carousel-indicators {
-  margin: 0;
-  padding: 0;
-  position: static;
-  width: 100%;
-  li {
-    background-color: #d8d8d8;
-    &.active,
-    &:hover {
-      background-color: $dusty-orange;
+.carousel-fade {
+  .carousel-inner {
+    z-index: 2;
+    .item {
+      opacity: 0;
+      -webkit-transition-property: opacity;
+      transition-property: opacity;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 2037px;
+    }
+    .active {
+      opacity: 1;
+      &.left,
+      &.right {
+        left: 0;
+        opacity: 0;
+        z-index: 1;
+      }
+    }
+    .next.left,
+    .prev.right {
+      opacity: 1;
+    }
+    .carousel-control {
+      z-index: 2;
     }
   }
-}
-.carousel-control {
-  background: none;
-  color: $dusty-orange;
-  box-shadow: none;
-  opacity: 1;
-  text-shadow: none;
-  top: 23%;
-  &.left,
-  &.right {
-    background: none;
+  .left-control, 
+  .right-control {
+    position: absolute;
+    top: 50%;
+    height: 51px;
+    width: 51px;
+    line-height: 48px;
+    border-radius: 50%;
+    border:1px solid #fff;  
+    z-index: 20;
+    font-size: 24px;
+    color: #fff;
+    text-align: center;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
   }
-  &:focus,
-  &:hover {
-    color: $text-color;
-    opacity: 1;
-  }
-  .icon-prev, 
-  .icon-next, 
-  .glyphicon-chevron-left, 
-  .glyphicon-chevron-right {
-    top: 0;
+  .left-control {
+    left: -51px;
+    &:hover {
+      color: #fff;
+    }
+  } 
+  .right-control {
+    right: -51px;
+    &:hover {
+      color: #fff;
+    }
   }
 }
