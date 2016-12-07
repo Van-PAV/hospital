@@ -15,7 +15,7 @@
   </head>
 </html>
 <body>
-  <header class="header" id="home">
+  <header id="home" class="header">
     <div class="top-header hidden-xs">
       <div class="container">
         <div class="row">
@@ -31,12 +31,12 @@
         </div>
       </div>
     </div>
-    <div class="navbar navbar-inverse sticky-navigation" role="navigation">
+    <div role="navigation" class="navbar navbar-inverse sticky-navigation">
       <div class="container">
         <div class="navbar-header">
-          <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand logo" href="/"><img class="img-responsive" src="./images/logo.png" alt="Mizaya Clinic"></a>
+          <button type="button" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar" class="navbar-toggle collapsed"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="/" class="navbar-brand logo"><img src="./images/logo.png" alt="Mizaya Clinic" class="img-responsive"></a>
         </div>
-        <div class="navbar-collapse collapse" id="navbar">
+        <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
             <li class="scroll active"><a href="#home">Home</a></li>
             <li class="scroll"><a href="#about">About Us</a></li>
@@ -52,31 +52,31 @@
     <div class="preloader"><i class="fa fa-circle-o-notch fa-spin"></i></div>
     <section class="section section-banner home-banner">
       <div class="section-content">
-        <div class="carousel slide carousel-fade" id="home-slider" data-ride="carousel">
+        <div id="home-slider" data-ride="carousel" class="carousel slide carousel-fade">
           <div class="carousel-inner">
-            <div class="item active" style="background-image: url(./images/banner/1.jpg)">
+            <div style="background-image: url(./images/banner/1.jpg)" class="item active">
               <div class="caption">
                 <h1 class="animated fadeInLeftBig">Welcome to <span>Mizaya Clinic</span></h1><br>
                 <h1 class="animated fadeInRightBig">The Best Healthy Care</h1>
               </div>
             </div>
-            <div class="item" style="background-image: url(./images/banner/2.jpg)">
+            <div style="background-image: url(./images/banner/2.jpg)" class="item">
               <div class="caption">
                 <h1 class="animated fadeInLeftBig">Better <span>Technology </span>for</h1><br>
                 <h1 class="animated fadeInRightBig">Better <span>Healthcare</span></h1>
               </div>
             </div>
-            <div class="item" style="background-image: url(./images/banner/3.jpg)">
+            <div style="background-image: url(./images/banner/3.jpg)" class="item">
               <div class="caption">
                 <h1 class="animated fadeInLeftBig">Better <span>Technology </span>for</h1><br>
                 <h1 class="animated fadeInRightBig">Better <span>Healthcare </span></h1>
               </div>
-            </div><a class="left-control" href="#home-slider" data-slide="prev"><i class="fa fa-angle-left"></i></a><a class="right-control" href="#home-slider" data-slide="next"><i class="fa fa-angle-right"></i></a><a class="btn-start" id="tohash" href="#about"><i class="fa fa-angle-down"></i></a>
+            </div><a href="#home-slider" data-slide="prev" class="left-control"><i class="fa fa-angle-left"></i></a><a href="#home-slider" data-slide="next" class="right-control"><i class="fa fa-angle-right"></i></a><a id="tohash" href="#about" class="btn-start"><i class="fa fa-angle-down"></i></a>
           </div>
         </div>
       </div>
     </section>
-    <section class="section section-about" id="about">
+    <section id="about" class="section section-about">
       <div class="section-header">
         <div class="container">
           <h2>About us</h2>
@@ -93,13 +93,13 @@
       <div class="section-content container-fluid">
         <div class="row">
           <div class="col-xs-12 col-sm-4 col-md-4 hidden-xs text-center wow fadeInUp">
-            <div class="inner"><img class="img-responsive u-display--inline-block" src="./images/icons/emergency-icon.png" alt="Emergency case">
+            <div class="inner"><img src="./images/icons/emergency-icon.png" alt="Emergency case" class="img-responsive u-display--inline-block">
               <h3>Emergency case</h3>
-              <p>Cras pharetra erat libero, eu bibendum augue venenatis quis. Duis eu felis quis nunc venenatis vulputate pretium quis est. Mauris pretium eget orci vitae lobortis. Etiam sed tristique neque.</p><a class="btn btn-call" href="#">Call us</a>
+              <p>Cras pharetra erat libero, eu bibendum augue venenatis quis. Duis eu felis quis nunc venenatis vulputate pretium quis est. Mauris pretium eget orci vitae lobortis. Etiam sed tristique neque.</p><a href="#" class="btn btn-call">Call us</a>
             </div>
           </div>
           <div class="col-xs-12 col-sm-4 col-md-4 text-center open-item wow fadeInUp">
-            <div class="inner"><img class="img-responsive u-display--inline-block" src="./images/icons/opening-hour.png" alt="Emergency case">
+            <div class="inner"><img src="./images/icons/opening-hour.png" alt="Emergency case" class="img-responsive u-display--inline-block">
               <h3>Opening hours</h3>
               <p>Cras pharetra erat libero, eu bibendum augue venenatis quis. </p>
               <table class="table table-responsive">
@@ -119,15 +119,15 @@
             </div>
           </div>
           <div class="col-xs-12 col-sm-4 col-md-4 hidden-xs text-center wow fadeInUp">
-            <div class="inner"><img class="img-responsive u-display--inline-block" src="./images/icons/emergency-icon.png" alt="Emergency case">
+            <div class="inner"><img src="./images/icons/emergency-icon.png" alt="Emergency case" class="img-responsive u-display--inline-block">
               <h3>Emergency case</h3>
-              <p>Cras pharetra erat libero, eu bibendum augue venenatis quis. Duis eu felis quis nunc venenatis vulputate pretium quis est. Mauris pretium eget orci vitae lobortis. Etiam sed tristique neque.</p><a class="btn btn-call" href="#">Call us</a>
+              <p>Cras pharetra erat libero, eu bibendum augue venenatis quis. Duis eu felis quis nunc venenatis vulputate pretium quis est. Mauris pretium eget orci vitae lobortis. Etiam sed tristique neque.</p><a href="#" class="btn btn-call">Call us</a>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="section section-service" id="service">
+    <section id="service" class="section section-service">
       <div class="section-header">
         <div class="container">
           <h2>Our services</h2>
@@ -137,7 +137,7 @@
         <div class="container">
           <div class="row">
                 <div class="col-xs-12 col-sm-3 com-md-3">
-                  <div class="item text-center"><img class="img-responsive u-display--inline-block hidden-xs" src="./images/icons/#{imageName}.png" alt="">
+                  <div class="item text-center"><img src="./images/icons/healthycare.png" alt="" class="img-responsive u-display--inline-block hidden-xs">
                     <div class="inner">
                       <h2>Healthy care</h2>
                       <p>Etiam suscipit sem facilisis, vehicula est quis, vehicula lectus. Ut tempus ultrices ex pretium sollicitudin.</p>
@@ -145,7 +145,7 @@
                   </div>
                 </div>
                 <div class="col-xs-12 col-sm-3 com-md-3">
-                  <div class="item text-center"><img class="img-responsive u-display--inline-block hidden-xs" src="./images/icons/#{imageName}.png" alt="">
+                  <div class="item text-center"><img src="./images/icons/mriscan.png" alt="" class="img-responsive u-display--inline-block hidden-xs">
                     <div class="inner">
                       <h2>MRI Scanner</h2>
                       <p>Etiam suscipit sem facilisis, vehicula est quis, vehicula lectus. Ut tempus ultrices ex pretium sollicitudin.</p>
@@ -153,7 +153,7 @@
                   </div>
                 </div>
                 <div class="col-xs-12 col-sm-3 com-md-3">
-                  <div class="item text-center"><img class="img-responsive u-display--inline-block hidden-xs" src="./images/icons/#{imageName}.png" alt="">
+                  <div class="item text-center"><img src="./images/icons/ctscan.png" alt="" class="img-responsive u-display--inline-block hidden-xs">
                     <div class="inner">
                       <h2>CT Scanner</h2>
                       <p>Etiam suscipit sem facilisis, vehicula est quis, vehicula lectus. Ut tempus ultrices ex pretium sollicitudin.</p>
@@ -161,7 +161,7 @@
                   </div>
                 </div>
                 <div class="col-xs-12 col-sm-3 com-md-3">
-                  <div class="item text-center"><img class="img-responsive u-display--inline-block hidden-xs" src="./images/icons/#{imageName}.png" alt="">
+                  <div class="item text-center"><img src="./images/icons/eyecare.png" alt="" class="img-responsive u-display--inline-block hidden-xs">
                     <div class="inner">
                       <h2>Eye care</h2>
                       <p>Etiam suscipit sem facilisis, vehicula est quis, vehicula lectus. Ut tempus ultrices ex pretium sollicitudin.</p>
@@ -172,17 +172,81 @@
         </div>
       </div>
     </section>
-    <section class="section section-about" id="doctor">
+    <section id="doctor" class="section section-doctor">
       <div class="section-header">
         <div class="container">
           <h2>Our Doctors</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus efficitur vulputate tortor, ut viverra mauris bibendum et. Donec sed risus ut diam congue aliquam</p>
         </div>
       </div>
       <div class="section-content">
-        <div class="container"></div>
+        <div class="container">
+          <div class="team-members">
+            <div class="row">
+              <div class="col-sm-6 col-md-3">
+                <div class="team-member">
+                  <div class="member-image"><img src="./images/teams/team1.png" class="img-responsive"></div>
+                  <div class="member-info">
+                    <h3>Doctor 1</h3>
+                    <p>Emergency Doctor</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-3">
+                <div class="team-member">
+                  <div class="member-image"><img src="./images/teams/team2.png" class="img-responsive"></div>
+                  <div class="member-info">
+                    <h3>Doctor 2</h3>
+                    <p>Emergency Doctor</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-3">
+                <div class="team-member">
+                  <div class="member-image"><img src="./images/teams/team3.png" class="img-responsive"></div>
+                  <div class="member-info">
+                    <h3>Doctor 3</h3>
+                    <p>Emergency Doctor</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-3">
+                <div class="team-member">
+                  <div class="member-image"><img src="./images/teams/team4.png" class="img-responsive"></div>
+                  <div class="member-info">
+                    <h3>Doctor 4</h3>
+                    <p>Emergency Doctor</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
-    <section class="section section-about" id="contact">
+    <section class="section section-team clearfix">
+      <div class="section-content">
+        <div class="row">
+          <div class="col-sm-6 col-md-3">
+            <div class="number">3450</div>
+            <div class="name">Doctors</div>
+          </div>
+          <div class="col-sm-6 col-md-3">
+            <div class="number">1234</div>
+            <div class="name">Nurses</div>
+          </div>
+          <div class="col-sm-6 col-md-3">
+            <div class="number">6000</div>
+            <div class="name">Medical treatments</div>
+          </div>
+          <div class="col-sm-6 col-md-3">
+            <div class="number">6789</div>
+            <div class="name">Laboratory</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="section section-about">
       <div class="section-header">
         <div class="container">
           <h2>Contact us</h2>
