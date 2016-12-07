@@ -1,13 +1,10 @@
 .btn {
 	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
 	font: bold 14px Roboto;
-	min-width: 160px;
-	padding: (($base-spacing - 1) * 2) (($base-spacing - 1) * 4);
+  padding: (($base-spacing - 2) * 2) (($base-spacing - 2) * 5); 
 	text-transform: uppercase;
 	@media (min-width: 768px) {
-		font: 500 18px Source Sans Pro;
-		min-width: 300px;
-		padding: (($base-spacing - 1) * 2.5) (($base-spacing - 1) * 4);
+		font: 500 14px $font-family-sans-serif;
 	}
 }
 .btn-start {
@@ -32,13 +29,16 @@
     background-color: lighter($dusty-orange, 0.5);
   }
 }
-.btn-full {
-	width: auto;
-	@media (min-width: 768px) {
-		padding-left: 0;
-		padding-right: 0;
-		width: 100%;
-	}
+.btn-call {
+  color: $white;
+  border-color: $white;
+  box-shadow: 0 2px 2px 0 rgba(255, 255, 255, 0.14), 0 3px 1px -2px rgba(255, 255, 255, 0.2), 0 1px 5px 0 rgba(255, 255, 255, 0.12);
+  min-width: 195px;
+  &:focus,
+  &:hover {
+    background-color: $white;
+    color: $dusty-orange;
+  }
 }
 .btn-back-to-top {
   backface-visibility: hidden;

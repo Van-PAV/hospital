@@ -60,3 +60,42 @@
     }
   }
 }
+
+// Section: Openning hours
+.section-openhour {
+  color: $white;
+  margin: 0;
+  padding: 0;
+  .section-content {
+    .inner {
+      padding: ($base-spacing * 4) 0;
+    }
+    .open-item {
+      background: $gray;
+      color: $text-color;
+    }
+    .img-responsive {
+      margin: 0 0 ($base-spacing * 2);
+      max-height: 40px;
+    }
+    h3 {
+      font: bold 16px Roboto;
+      margin: 0 0 $base-spacing;
+      text-transform: uppercase;
+      @media (min-width: 768px) {
+        font: 500 20px $font-family-sans-serif;
+        margin: 0 0 ($base-spacing * 3);
+      }
+    }
+    p {
+      margin: 0 0 ($base-spacing * 3);
+    }
+    table {
+      border: 0 none;
+      tbody > tr:fisrt-child > th,
+      tbody > tr:fisrt-child > td {
+        border-top: 0 none;
+      }
+    }
+  }
+}
