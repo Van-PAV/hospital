@@ -21,7 +21,7 @@
         display: block;
       }
       @media (min-width: 768px) {
-        font-size: 32px;
+        font: 600 28px/1.78 $font-family-sans-serif;
       }
     }
   }
@@ -29,8 +29,7 @@
     p {
       margin: 0 0 ($base-spacing * 2);
       @media (min-width: 768px) {
-        font-size: 14px;
-        font-weight: 300;
+        font: 300 14px/1.71 $font-family-sans-serif;
         margin: 0 0 ($base-spacing * 3);
       }
     }
@@ -38,9 +37,12 @@
       margin: 0 0 ($base-spacing * 2);
     }
     h2 {
-      font: 400 18px/1.5 Roboto;
+      font: 600 14px/1.5 Roboto;
       text-transform: uppercase;
-      padding: 0 0 $base-spacing;
+      margin: 0 0 $base-spacing;
+      @media (min-width: 768px) {
+        font: 600 16px/1.5 $font-family-sans-serif;
+      }
     }
   }
 }
