@@ -1,5 +1,49 @@
+.top-header {
+    font-weight: 400;
+    ul {
+        list-style: none;
+        li {
+            display: inline-block;
+            padding: $base-spacing ($base-spacing *2) $base-spacing 0;
+            line-height: 1.71;
+            strong {
+                display: inline-block;
+                margin: 0 $base-spacing 0 0;
+            }
+            a {
+                color: $text-color;
+                &:active,
+                &:focus,
+                &:hover {
+                    color: $dusty-orange;
+                    text-decoration: none;
+                }
+            }
+            &.active {
+                a {
+                    color: $dusty-orange;
+                    text-decoration: none;
+                }
+            }
+        }
+        &:first-child {
+            li a {
+                text-decoration: underline;
+                &:active,
+                &:focus,
+                &:hover {
+                    color: $dusty-orange;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
 .navbar-inverse {
+    border-top: 5px solid $dusty-orange;
     box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.13);
+    border-radius: 0;
+    margin: 0;
     .navbar-nav {
         font-size: $font-size-base;
         margin: 0 -15px;
@@ -7,7 +51,6 @@
             box-shadow: 0 0 1px transparent;
             color: $navbar-inverse-link-color;
             display: block;
-            font: 400 14px/1.71 Source Sans Pro, sans-serif;
             padding: $base-spacing;
             position: relative;
             text-align: right;
@@ -53,6 +96,9 @@
         &:focus,
         &:hover {
             color: $dusty-orange;;
+        }
+        > img {
+            max-height: 55px;
         }
     }
     .navbar-toggle {

@@ -1,0 +1,21 @@
+mixin item(imageName, title, content, className) 
+	.col-xs-12.col-sm-3.com-md-3.wow.fadeInDown(data-wow-duration="1000ms" data-wow-delay="300ms")
+		.item.text-center
+			.hidden-xs
+				img.img-responsive.u-display--inline-block.hidden-xs(src="./images/icons/#{imageName}.png", alt="")
+			div(class ="inner #{className}")
+				h2 #{title}
+				p #{content}
+section.section.section-service#service
+	.section-header
+		.container
+			h2 Our services
+	.section-content
+		.container
+			.row
+				+item("healthycare", "Healthy care", "Etiam suscipit sem facilisis, vehicula est quis, vehicula lectus. Ut tempus ultrices ex pretium sollicitudin.", "inner--healthy-care")
+				+item("mriscan", "MRI Scanner", "Etiam suscipit sem facilisis, vehicula est quis, vehicula lectus. Ut tempus ultrices ex pretium sollicitudin.", "inner--mri-scaner")
+				+item("ctscan", "CT Scanner", "Etiam suscipit sem facilisis, vehicula est quis, vehicula lectus. Ut tempus ultrices ex pretium sollicitudin.", "inner--ct-scaner")
+				+item("eyecare", "Eye care", "Etiam suscipit sem facilisis, vehicula est quis, vehicula lectus. Ut tempus ultrices ex pretium sollicitudin.", "inner--eye-care")
+
+				

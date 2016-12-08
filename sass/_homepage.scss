@@ -1,3 +1,197 @@
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 999999;
+  background: #fff;
+  > i {
+    position: absolute;
+    font-size: 36px;
+    line-height: 36px;
+    top: 50%;
+    left: 50%;
+    height: 36px;
+    width: 36px;
+    margin-top: -15px;
+    margin-left: -15px;
+    display: inline-block;
+  }
+}
+.section-banner {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+  .caption {
+    position: absolute;
+    top: 50%;
+    margin-top: -104px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    text-transform: uppercase;
+    z-index: 15;
+    font-size: 18px;
+    font-weight: 300;
+    color: #fff;
+    h1 {
+      background-color: $dusty-orange;
+      color: #fff;
+      display: inline-block;
+      font-size: 18px;
+      margin-bottom: $base-spacing;
+      padding: $base-spacing ($base-spacing * 3);
+      @media (min-width: 768px) {
+        font-size: 36px;
+      }
+      span {
+        font-weight: 900;
+      }
+    }
+  }
+  &:hover {
+    .left-control {
+      left:30px;
+    }
+    .right-control {
+      right:30px;
+    }
+  }
+}
 
+// Section: Openning hours
+.section-openhour {
+  color: $white;
+  margin: 0;
+  padding: 0;
+  .section-content {
+    .inner {
+      padding: ($base-spacing * 4) 0;
+    }
+    .open-item {
+      background: $gray;
+      color: $text-color;
+    }
+    .img-responsive {
+      margin: 0 0 ($base-spacing * 2);
+      max-height: 40px;
+    }
+    h3 {
+      font: bold 16px Roboto;
+      margin: 0 0 $base-spacing;
+      text-transform: uppercase;
+      @media (min-width: 768px) {
+        font: 500 20px $font-family-sans-serif;
+        margin: 0 0 ($base-spacing * 3);
+      }
+    }
+    p {
+      margin: 0 0 ($base-spacing * 3);
+    }
+    table {
+      border: 0 none;
+      tbody > tr:fisrt-child > th,
+      tbody > tr:fisrt-child > td {
+        border-top: 0 none;
+      }
+    }
+  }
+}
 
+// Section: Doctors
+.section-doctor {
+  color: $white;
+  margin: 0;
+  padding: 0;
+  .section-header {
+    p {
+      color: $text-color;
+      margin: 20px 0px 0px 0px;
+      @media (min-width: 768px) {
+        margin: 20px 200px 0px 200px;
+      }
+    }
+  }
+  .section-content {
+    .team-member {
+      text-align: center;
+      color: $text-color;
+      h3 {
+        margin: 25px 0px 10px;
+      }
+    }
+    .img-responsive {
+      width: 100%
+    }
+  }
+}
 
+// Section: team
+.section-team {
+  color: $white;
+  margin: 0;
+  padding: 0;
+  background: url(../images/section-team-bg.jpg) no-repeat center fixed;
+  .section-content {
+    text-align: center;
+    padding: 80px 0px 80px 0px;
+    .number {
+      font-weight: 700;
+      font-size: 50px;
+      margin: 0px 0px 10px 0px;
+    }
+    .name {
+      font-size: 20px;
+      margin-bottom: 20px;
+      @media (min-width: 768px) {
+        margin: 0px;
+      }
+    }
+  }
+}    
+
+// Section: Services
+.section-service {
+  .section-content {
+    h2 {
+      margin: 0 0 $base-spacing;
+    }
+    .inner {
+      background-repeat: no-repeat;
+      background-position: left center;
+      margin: 0 0 ($base-spacing * 3);
+      padding: 0 0 0 90px;
+      text-align: left;
+      &.inner--healthy-care {
+        background-image: url(../images/icons/mobile/healthy-care-icon.png);
+      }
+      &.inner--mri-scaner {
+        background-image: url(../images/icons/mobile/mri-scaner-icon.png);
+      }
+      &.inner--ct-scaner {
+        background-image: url(../images/icons/mobile/ct-scaner-icon.png);
+      }
+      &.inner--eye-care {
+        background-image: url(../images/icons/mobile/eye-care-icon.png);
+        margin: 0;
+      }
+      @media (min-width: 768px) {
+        background: none !important;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+      }
+      h2 {
+        margin: 0;
+        @media (min-width: 768px) {
+          margin: 0 0 ($base-spacing * 1);
+        }
+      }
+    }
+    .img-responsive {
+      margin: 0 0 ($base-spacing * 3);
+    }
+  }
+}

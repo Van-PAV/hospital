@@ -1,9 +1,34 @@
+.preloader
+	i(class="fa fa-circle-o-notch fa-spin")
 section.section.section-banner.home-banner
 	.section-content
-		.container
-			.row
-				.col-sm-12
-					h1 Better technology for better healthcare
-					.col-sm-12
-						a.btn.btn-banner(href="#") Learn more
-	
+		div(id="home-slider" class="carousel slide carousel-fade" data-ride="carousel")
+			.carousel-inner
+				.item.active(style="background-image: url(./images/banner/1.jpg)")
+					.caption
+						h1(class="animated fadeInLeftBig") Welcome to 
+							span Mizaya Clinic
+						br
+						h1(class="animated fadeInRightBig") The Best Healthy Care
+				.item(style="background-image: url(./images/banner/2.jpg)")
+					.caption
+						h1(class="animated fadeInLeftBig") Better 
+							span Technology 
+							| for
+						br
+						h1(class="animated fadeInRightBig") Better 
+							span Healthcare
+				.item(style="background-image: url(./images/banner/3.jpg)")
+					.caption
+						h1(class="animated fadeInLeftBig") Better 
+							span Technology 
+							| for
+						br
+						h1(class="animated fadeInRightBig") Better 
+							span Healthcare 
+				a(class="left-control" href="#home-slider" data-slide="prev")
+					i(class="fa fa-angle-left")
+				a(class="right-control" href="#home-slider" data-slide="next")
+					i(class="fa fa-angle-right")
+				a.btn-start(id="tohash" href="#about")
+					i(class="fa fa-angle-down")

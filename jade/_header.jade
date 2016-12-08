@@ -1,29 +1,40 @@
 header#home.header
-	.top-header
+	.top-header.hidden-xs
 		.container
-			ul
-				li Call us: 1900 1080
-	.container
-		.col-md-12
-			.navbar.navbar-inverse.sticky-navigation.navbar-fixed-top.affix(role="navigation", data-spy="affix", data-offset-top="200")
-				.container
-					.navbar-header
-						button(type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar")
-							span.sr-only Toggle navigation
-							span.icon-bar
-							span.icon-bar
-							span.icon-bar
-						a(class="navbar-brand logo" href="/")
-							| iknow
-					.navbar-collapse.collapse#navbar
-						ul.nav.navbar-nav.navbar-right
-							li
-								a(href="/#home") Home
-							li
-								a(href="/#about") About Us
-							li
-								a(href="/#service") Services
-							li
-								a(href="/#doctor") Doctors
-							li
-								a(href="/#contact") Contact Us
+			.row
+				ul.col-sm-6
+					li 
+						strong Call us: 
+						| 1900 1080
+					li 
+						strong Email us:
+						a(href="mailto: vppcuongnguyen@gmail.com") vppcuongnguyen@gmail.com
+				ul.col-sm-6.text-right
+					li.active 
+						a(href="#") English 
+					li 
+						a(href="#") 日本語
+					li 
+						a(href="#") Tiếng Việt
+	.navbar.navbar-inverse.sticky-navigation(role="navigation")
+		.container
+			.navbar-header
+				button(type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar")
+					span.sr-only Toggle navigation
+					span.icon-bar
+					span.icon-bar
+					span.icon-bar
+				a(class="navbar-brand logo" href="/")
+					img.img-responsive(src="./images/logo.png" alt="Mizaya Clinic")
+			.navbar-collapse.collapse#navbar
+				ul.nav.navbar-nav.navbar-right
+					li.scroll.active
+						a(href="#home") Home
+					li.scroll
+						a(href="#about") About Us
+					li.scroll
+						a(href="#service") Services
+					li.scroll
+						a(href="#doctor") Doctors
+					li.scroll
+						a(href="#contact") Contact Us
