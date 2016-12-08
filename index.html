@@ -15,7 +15,7 @@
   </head>
 </html>
 <body>
-  <header class="header" id="home">
+  <header id="home" class="header">
     <div class="top-header hidden-xs">
       <div class="container">
         <div class="row">
@@ -31,12 +31,12 @@
         </div>
       </div>
     </div>
-    <div class="navbar navbar-inverse sticky-navigation" role="navigation">
+    <div role="navigation" class="navbar navbar-inverse sticky-navigation">
       <div class="container">
         <div class="navbar-header">
-          <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand logo" href="/"><img class="img-responsive" src="./images/logo.png" alt="Mizaya Clinic"></a>
+          <button type="button" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar" class="navbar-toggle collapsed"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="/" class="navbar-brand logo"><img src="./images/logo.png" alt="Mizaya Clinic" class="img-responsive"></a>
         </div>
-        <div class="navbar-collapse collapse" id="navbar">
+        <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
             <li class="scroll active"><a href="#home">Home</a></li>
             <li class="scroll"><a href="#about">About Us</a></li>
@@ -52,37 +52,37 @@
     <div class="preloader"><i class="fa fa-circle-o-notch fa-spin"></i></div>
     <section class="section section-banner home-banner">
       <div class="section-content">
-        <div class="carousel slide carousel-fade" id="home-slider" data-ride="carousel">
+        <div id="home-slider" data-ride="carousel" class="carousel slide carousel-fade">
           <div class="carousel-inner">
-            <div class="item active" style="background-image: url(./images/banner/1.jpg)">
+            <div style="background-image: url(./images/banner/1.jpg)" class="item active">
               <div class="caption">
                 <h1 class="animated fadeInLeftBig">Welcome to <span>Mizaya Clinic</span></h1><br>
                 <h1 class="animated fadeInRightBig">The Best Healthy Care</h1>
               </div>
             </div>
-            <div class="item" style="background-image: url(./images/banner/2.jpg)">
+            <div style="background-image: url(./images/banner/2.jpg)" class="item">
               <div class="caption">
                 <h1 class="animated fadeInLeftBig">Better <span>Technology </span>for</h1><br>
                 <h1 class="animated fadeInRightBig">Better <span>Healthcare</span></h1>
               </div>
             </div>
-            <div class="item" style="background-image: url(./images/banner/3.jpg)">
+            <div style="background-image: url(./images/banner/3.jpg)" class="item">
               <div class="caption">
                 <h1 class="animated fadeInLeftBig">Better <span>Technology </span>for</h1><br>
                 <h1 class="animated fadeInRightBig">Better <span>Healthcare </span></h1>
               </div>
-            </div><a class="left-control" href="#home-slider" data-slide="prev"><i class="fa fa-angle-left"></i></a><a class="right-control" href="#home-slider" data-slide="next"><i class="fa fa-angle-right"></i></a><a class="btn-start" id="tohash" href="#about"><i class="fa fa-angle-down"></i></a>
+            </div><a href="#home-slider" data-slide="prev" class="left-control"><i class="fa fa-angle-left"></i></a><a href="#home-slider" data-slide="next" class="right-control"><i class="fa fa-angle-right"></i></a><a id="tohash" href="#about" class="btn-start"><i class="fa fa-angle-down"></i></a>
           </div>
         </div>
       </div>
     </section>
-    <section class="section section-about" id="about">
+    <section id="about" class="section section-about">
       <div class="section-header">
         <div class="container">
           <h2>About us</h2>
         </div>
       </div>
-      <div class="section-content">
+      <div data-wow-duration="1000ms" data-wow-delay="300ms" class="section-content wow fadeInUp">
         <div class="container">
           <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus efficitur vulputate tortor, ut viverra mauris bibendum et. Donec sed risus ut diam congue aliquam. Nam faucibus tristique ligula id iaculis. Mauris mollis in dolor ac pretium. Aenean neque velit, tempus quis nunc in, dictum varius nisl. Duis faucibus lacus in ante tincidunt lacinia. Nullam interdum nisi ac nibh aliquam consectetur. Nullam sapien dui, sagittis sit amet egestas nec, auctor et enim. Vivamus dui enim, feugiat a aliquet in, porta in leo. Aliquam mollis imperdiet mauris sit amet porta. Mauris nec interdum odio. Praesent neque nisi, scelerisque at finibus id, maximus vitae purus. Donec rhoncus orci a purus ultricies, quis pharetra sem viverra. Proin id rhoncus augue.</p>
           <p class="text-justify">Praesent in dui eu quam auctor sagittis a vitae dolor. Cras augue arcu, fringilla quis sapien vitae, tempor viverra justo. Etiam tortor urna, dignissim ac dictum non, accumsan at ex. Nullam consectetur, mauris eget fringilla consectetur, nisi orci lacinia odio, vel euismod neque arcu et dolor. Duis ut arcu in nulla placerat pulvinar. Curabitur eget dolor vel ligula bibendum pellentesque. Nullam eget dictum felis. Mauris pretium, odio vitae consectetur faucibus, lacus nulla suscipit purus, a aliquet magna justo vitae risus. Donec ut maximus odio.</p>
@@ -92,14 +92,14 @@
     <section class="section section-orange section-openhour">
       <div class="section-content container-fluid">
         <div class="row">
-          <div class="col-xs-12 col-sm-4 col-md-4 hidden-xs text-center wow fadeInUp">
-            <div class="inner"><img class="img-responsive u-display--inline-block" src="./images/icons/emergency-icon.png" alt="Emergency case">
+          <div data-wow-duration="1000ms" data-wow-delay="300ms" class="col-xs-12 col-sm-4 col-md-4 hidden-xs text-center wow fadeInUp">
+            <div class="inner"><img src="./images/icons/emergency-icon.png" alt="Emergency case" class="img-responsive u-display--inline-block">
               <h3>Emergency case</h3>
-              <p>Cras pharetra erat libero, eu bibendum augue venenatis quis. Duis eu felis quis nunc venenatis vulputate pretium quis est. Mauris pretium eget orci vitae lobortis. Etiam sed tristique neque.</p><a class="btn btn-call" href="#">Call us</a>
+              <p>Cras pharetra erat libero, eu bibendum augue venenatis quis. Duis eu felis quis nunc venenatis vulputate pretium quis est. Mauris pretium eget orci vitae lobortis. Etiam sed tristique neque.</p><a href="#" class="btn btn-call">Call us</a>
             </div>
           </div>
-          <div class="col-xs-12 col-sm-4 col-md-4 text-center open-item wow fadeInUp">
-            <div class="inner"><img class="img-responsive u-display--inline-block" src="./images/icons/opening-hour.png" alt="Emergency case">
+          <div data-wow-duration="1000ms" data-wow-delay="300ms" class="col-xs-12 col-sm-4 col-md-4 text-center open-item wow fadeInUp">
+            <div class="inner"><img src="./images/icons/opening-hour.png" alt="Emergency case" class="img-responsive u-display--inline-block">
               <h3>Opening hours</h3>
               <p>Cras pharetra erat libero, eu bibendum augue venenatis quis. </p>
               <table class="table table-responsive">
@@ -118,16 +118,16 @@
               </table>
             </div>
           </div>
-          <div class="col-xs-12 col-sm-4 col-md-4 hidden-xs text-center wow fadeInUp">
-            <div class="inner"><img class="img-responsive u-display--inline-block" src="./images/icons/emergency-icon.png" alt="Emergency case">
+          <div data-wow-duration="1000ms" data-wow-delay="300ms" class="col-xs-12 col-sm-4 col-md-4 hidden-xs text-center wow fadeInUp">
+            <div class="inner"><img src="./images/icons/emergency-icon.png" alt="Emergency case" class="img-responsive u-display--inline-block">
               <h3>Emergency case</h3>
-              <p>Cras pharetra erat libero, eu bibendum augue venenatis quis. Duis eu felis quis nunc venenatis vulputate pretium quis est. Mauris pretium eget orci vitae lobortis. Etiam sed tristique neque.</p><a class="btn btn-call" href="#">Call us</a>
+              <p>Cras pharetra erat libero, eu bibendum augue venenatis quis. Duis eu felis quis nunc venenatis vulputate pretium quis est. Mauris pretium eget orci vitae lobortis. Etiam sed tristique neque.</p><a href="#" class="btn btn-call">Call us</a>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="section section-service" id="service">
+    <section id="service" class="section section-service">
       <div class="section-header">
         <div class="container">
           <h2>Our services</h2>
@@ -136,33 +136,37 @@
       <div class="section-content">
         <div class="container">
           <div class="row">
-                <div class="col-xs-12 col-sm-3 com-md-3">
-                  <div class="item text-center"><img class="img-responsive u-display--inline-block hidden-xs" src="./images/icons/#{imageName}.png" alt="">
-                    <div class="inner">
+                <div data-wow-duration="1000ms" data-wow-delay="300ms" class="col-xs-12 col-sm-3 com-md-3 wow fadeInDown">
+                  <div class="item text-center">
+                    <div class="hidden-xs"><img src="./images/icons/healthycare.png" alt="" class="img-responsive u-display--inline-block hidden-xs"></div>
+                    <div class="inner inner--healthy-care">
                       <h2>Healthy care</h2>
                       <p>Etiam suscipit sem facilisis, vehicula est quis, vehicula lectus. Ut tempus ultrices ex pretium sollicitudin.</p>
                     </div>
                   </div>
                 </div>
-                <div class="col-xs-12 col-sm-3 com-md-3">
-                  <div class="item text-center"><img class="img-responsive u-display--inline-block hidden-xs" src="./images/icons/#{imageName}.png" alt="">
-                    <div class="inner">
+                <div data-wow-duration="1000ms" data-wow-delay="300ms" class="col-xs-12 col-sm-3 com-md-3 wow fadeInDown">
+                  <div class="item text-center">
+                    <div class="hidden-xs"><img src="./images/icons/mriscan.png" alt="" class="img-responsive u-display--inline-block hidden-xs"></div>
+                    <div class="inner inner--mri-scaner">
                       <h2>MRI Scanner</h2>
                       <p>Etiam suscipit sem facilisis, vehicula est quis, vehicula lectus. Ut tempus ultrices ex pretium sollicitudin.</p>
                     </div>
                   </div>
                 </div>
-                <div class="col-xs-12 col-sm-3 com-md-3">
-                  <div class="item text-center"><img class="img-responsive u-display--inline-block hidden-xs" src="./images/icons/#{imageName}.png" alt="">
-                    <div class="inner">
+                <div data-wow-duration="1000ms" data-wow-delay="300ms" class="col-xs-12 col-sm-3 com-md-3 wow fadeInDown">
+                  <div class="item text-center">
+                    <div class="hidden-xs"><img src="./images/icons/ctscan.png" alt="" class="img-responsive u-display--inline-block hidden-xs"></div>
+                    <div class="inner inner--ct-scaner">
                       <h2>CT Scanner</h2>
                       <p>Etiam suscipit sem facilisis, vehicula est quis, vehicula lectus. Ut tempus ultrices ex pretium sollicitudin.</p>
                     </div>
                   </div>
                 </div>
-                <div class="col-xs-12 col-sm-3 com-md-3">
-                  <div class="item text-center"><img class="img-responsive u-display--inline-block hidden-xs" src="./images/icons/#{imageName}.png" alt="">
-                    <div class="inner">
+                <div data-wow-duration="1000ms" data-wow-delay="300ms" class="col-xs-12 col-sm-3 com-md-3 wow fadeInDown">
+                  <div class="item text-center">
+                    <div class="hidden-xs"><img src="./images/icons/eyecare.png" alt="" class="img-responsive u-display--inline-block hidden-xs"></div>
+                    <div class="inner inner--eye-care">
                       <h2>Eye care</h2>
                       <p>Etiam suscipit sem facilisis, vehicula est quis, vehicula lectus. Ut tempus ultrices ex pretium sollicitudin.</p>
                     </div>
@@ -172,7 +176,7 @@
         </div>
       </div>
     </section>
-    <section class="section section-about" id="doctor">
+    <section id="doctor" class="section section-about">
       <div class="section-header">
         <div class="container">
           <h2>Our Doctors</h2>
@@ -182,7 +186,7 @@
         <div class="container"></div>
       </div>
     </section>
-    <section class="section section-about" id="contact">
+    <section id="contact" class="section section-about">
       <div class="section-header">
         <div class="container">
           <h2>Contact us</h2>

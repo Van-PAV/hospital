@@ -99,3 +99,47 @@
     }
   }
 }
+
+// Section: Services
+.section-service {
+  .section-content {
+    h2 {
+      margin: 0 0 $base-spacing;
+    }
+    .inner {
+      background-repeat: no-repeat;
+      background-position: left center;
+      margin: 0 0 ($base-spacing * 3);
+      padding: 0 0 0 90px;
+      text-align: left;
+      &.inner--healthy-care {
+        background-image: url(../images/icons/mobile/healthy-care-icon.png);
+      }
+      &.inner--mri-scaner {
+        background-image: url(../images/icons/mobile/mri-scaner-icon.png);
+      }
+      &.inner--ct-scaner {
+        background-image: url(../images/icons/mobile/ct-scaner-icon.png);
+      }
+      &.inner--eye-care {
+        background-image: url(../images/icons/mobile/eye-care-icon.png);
+        margin: 0;
+      }
+      @media (min-width: 768px) {
+        background: none !important;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+      }
+      h2 {
+        margin: 0;
+        @media (min-width: 768px) {
+          margin: 0 0 ($base-spacing * 1);
+        }
+      }
+    }
+    .img-responsive {
+      margin: 0 0 ($base-spacing * 3);
+    }
+  }
+}
