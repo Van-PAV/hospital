@@ -1,0 +1,22 @@
+mixin thumb(imageName, effect)
+  div(class="col-xs-6 col-sm-3 com-md-3 wow #{effect}", data-wow-duration="1000ms", data-wow-delay="300ms")
+    .portfolio
+      img.img-responsive.u-display--inline-block(src="/images/services/#{imageName}.jpg", alt="")
+      .overlay
+        .overlay-content
+          .folio-overview
+            .folio-expand
+              a(href="/images/services/#{imageName}.jpg", data-lightbox="portfolio")
+                i(class="fa fa-search-plus")
+section.section.section-portfolio
+  .section-content
+    .container-fluid
+      .row
+        +thumb("service1", "fadeInRightBig")
+        +thumb("service2", "fadeInLeftBig")
+        +thumb("service3", "fadeInRightBig")
+        +thumb("service4", "fadeInLeftBig")
+        +thumb("service5", "fadeInRightBig")
+        +thumb("service6", "fadeInLeftBig")
+        +thumb("service7", "fadeInLeftBig")
+        +thumb("service8", "fadeInRightBig")
