@@ -2,7 +2,7 @@ mixin item(imageName, title, content, className)
 	.col-xs-12.col-sm-3.com-md-3.wow.fadeInDown(data-wow-duration="1000ms" data-wow-delay="300ms")
 		.item.text-center
 			.hidden-xs
-				img.img-responsive.u-display--inline-block.hidden-xs(src="./images/icons/#{imageName}.png", alt="")
+				img.img-responsive.u-display--inline-block.hidden-xs(src="/images/icons/#{imageName}.png", alt="")
 			div(class ="inner #{className}")
 				h2 #{title}
 				p #{content}
