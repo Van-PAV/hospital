@@ -108,7 +108,10 @@
   .section-header {
     p {
       color: $text-color;
-      margin: 20px 200px 0px 200px;
+      margin: 20px 0px 0px 0px;
+      @media (min-width: 768px) {
+        margin: 20px 200px 0px 200px;
+      }
     }
   }
   .section-content {
@@ -141,6 +144,10 @@
     }
     .name {
       font-size: 20px;
+      margin-bottom: 20px;
+      @media (min-width: 768px) {
+        margin: 0px;
+      }
     }
   }
 }
