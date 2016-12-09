@@ -92,8 +92,8 @@
     }
     table {
       border: 0 none;
-      tbody > tr:fisrt-child > th,
-      tbody > tr:fisrt-child > td {
+      tr:first-child th,
+      tr:first-child td {
         border-top: 0 none;
       }
     }
@@ -144,6 +144,7 @@
   }
 }
 
+// Section: Portfolio
 .section-portfolio {
   margin: 0;
   padding: 0;
@@ -222,15 +223,85 @@
   }
 }
 
+// Section: Doctors
+.section-doctor {
+  .section-header {
+    h2 {
+      margin: 0 0 ($base-spacing * 2);
+    }
+  }
+  .section-content {
+    .team-member {
+      text-align: center;
+      margin: 0 0 ($base-spacing * 4);
+      h3 {
+        font: 600 14px $font-family-sans-serif;
+        margin: 0 0 ($base-spacing);
+        text-transform: uppercase;
+        @media (min-width: 768px) {
+          font-size: 16px;
+        }
+      }
+    }
+    .img-responsive {
+      width: 100%
+    }
+  }
+}
+
+// Section: Team
+.section-team {
+  background-image: url(../images/section-team-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  color: #fff;
+  padding: ($base-spacing * 5) 0;
+  .section-content {
+    .counter {
+      margin: 0 0 ($base-spacing * 3);
+    }
+    .number {
+      font-size: 30px;
+      font-weight: 600;
+      margin: 0 0 $base-spacing;
+      letter-spacing: 2px;
+    }
+    .name {
+      font-size: 16px;
+      font-weight: 300;
+    }
+  }
+  @media (min-width: 768px) {
+    padding: ($base-spacing * 7) 0;
+    .section-content {
+      .number {
+        font-size: 60px;
+      }
+      .name {
+        font-size: 20px;
+      }
+    }
+  }
+}    
+
 // Section: Contact us
 .section-contact {
   margin: 0;
-  padding: 0;
+  padding-bottom: 0;
   position: relative;
+  overflow: hidden;
+  .section-header {
+    h2 {
+      margin: 0 0 ($base-spacing * 2);
+    }
+  }
   .section-content {
     position: relative;
     .map {
       height: 600px;
+      overflow: hidden;
       @media (min-width: 768px) {
         height: 500px;
       }
@@ -240,9 +311,11 @@
       color: $white;
       position: absolute;
       width: 100%;
+      z-index: 1;
       @media (min-width: 768px) {
         height: 100%;
-        left: 0;
+        left: 10%;
+        width: 33.3%;
         div {
           height: 100%;
         }
@@ -254,24 +327,12 @@
         @media (min-width: 768px) {
           padding: ($base-spacing * 4) ($base-spacing * 2);
         }
-        ul {
-          list-style: none;
-          li {
-            list-style-type: none;
-            margin: 0 0 $base-spacing;
-            span {              
-              display: inline-block;
-              font-weight: 600;
-              padding: 0 5px 0 0;
-            }
-            a {
-              color: $white;
-              text-decoration: underline;
-              &:focus,
-              &:hover {
-                text-decoration: none;
-              }
-            }
+        a {
+          color: $white;
+          text-decoration: underline;
+          &:focus,
+          &:hover {
+            text-decoration: none;
           }
         }
       }
@@ -280,6 +341,21 @@
         margin: ($base-spacing * 3) (-($base-spacing * 2));
         position: relative;
       }
+    }
+    ul {
+      list-style: none;
+    }
+    li {
+      list-style-type: none;
+      margin: 0 0 $base-spacing;
+      span {              
+        display: inline-block;
+        font-weight: 600;
+        padding: 0 5px 0 0;
+      }
+    }
+    .map-content {
+      max-width: 220px;
     }
   }
 }

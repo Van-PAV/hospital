@@ -1,57 +1,5 @@
 // Footer
 .footer {
   background-color: $footer-bg;
-  padding: ($base-spacing * 5) 0;
-  @media (min-width: 768px) {
-    padding: ($base-spacing * 7) 0;
-  }
-  h3 {
-    color: $dusty-orange;
-    font: 600 20px/1.6 Source Sans Pro;
-    margin: 0 0 $base-spacing;
-  	&.logo {
-      font: normal 24px/1 Dakota;
-      margin: 0;
-      @media (min-width: 768px) {
-        font-size: 36px;
-        line-height: 0.67;
-      }
-  	}
-  }
-  ul {
-  	list-style: none;
-  	li {
-  		list-style-type: none;
-  		line-height: 1.78;
-  		a {
-  			color: $text-color;
-  			&:active,
-  			&:focus,
-  			&:hover {
-  				color: $dusty-orange;
-  			}
-  		}
-  	}
-  	&.social-links {
-  		li {
-        display: inline-block;
-        margin: 0 $base-spacing 0 0; 
-        a {
-          opacity: 0.8;
-          &:active,
-          &:focus,
-          &:hover {
-            opacity: 1;
-            text-decoration: none;
-          }
-        }
-  		}
-  	}
-  }
-  .item {
-    margin: 0 0 ($base-spacing * 2);
-    @media (min-width: 768px) {
-      margin: 0;
-    }
-  }
+  padding: ($base-spacing * 2) 0;
 }

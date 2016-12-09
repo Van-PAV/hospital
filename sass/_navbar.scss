@@ -1,3 +1,6 @@
+.header {
+    position: relative;
+}
 .top-header {
     font-weight: 400;
     ul {
@@ -40,6 +43,7 @@
     }
 }
 .navbar-inverse {
+    background: $white;
     border-top: 5px solid $dusty-orange;
     box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.13);
     border-radius: 0;
