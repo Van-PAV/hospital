@@ -108,4 +108,8 @@ jQuery(function($) {
     });
   }
   google.maps.event.addDomListener(window, 'load', initMap);
+
+  //Count to
+  $('.number').countTo();
+
 });

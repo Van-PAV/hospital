@@ -144,6 +144,7 @@
   }
 }
 
+// Section: Portfolio
 .section-portfolio {
   margin: 0;
   padding: 0;
@@ -221,6 +222,58 @@
     }
   }
 }
+
+// Section: Doctors
+.section-doctor {
+  color: $white;
+  margin: 0;
+  padding: 0;
+  .section-header {
+    p {
+      color: $text-color;
+      margin: 20px 0px 0px 0px;
+      @media (min-width: 768px) {
+        margin: 20px 200px 0px 200px;
+      }
+    }
+  }
+  .section-content {
+    .team-member {
+      text-align: center;
+      color: $text-color;
+      h3 {
+        margin: 25px 0px 10px;
+      }
+    }
+    .img-responsive {
+      width: 100%
+    }
+  }
+}
+
+// Section: Team
+.section-team {
+  color: $white;
+  margin: 0;
+  padding: 0;
+  background: url(../images/section-team-bg.jpg) no-repeat center fixed;
+  .section-content {
+    text-align: center;
+    padding: 80px 0px 80px 0px;
+    .number {
+      font-weight: 700;
+      font-size: 50px;
+      margin: 0px 0px 10px 0px;
+    }
+    .name {
+      font-size: 20px;
+      margin-bottom: 20px;
+      @media (min-width: 768px) {
+        margin: 0px;
+      }
+    }
+  }
+}    
 
 // Section: Contact us
 .section-contact {
