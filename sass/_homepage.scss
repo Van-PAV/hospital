@@ -221,3 +221,65 @@
     }
   }
 }
+
+// Section: Contact us
+.section-contact {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  .section-content {
+    position: relative;
+    .map {
+      height: 600px;
+      @media (min-width: 768px) {
+        height: 500px;
+      }
+    }
+    .company-info {
+      bottom: 0;
+      color: $white;
+      position: absolute;
+      width: 100%;
+      @media (min-width: 768px) {
+        height: 100%;
+        left: 0;
+        div {
+          height: 100%;
+        }
+      }
+      .item {
+        background: rgba(234, 85, 4, 0.83);
+        margin: 0 -15px;
+        padding: ($base-spacing * 3) ($base-spacing * 2);
+        @media (min-width: 768px) {
+          padding: ($base-spacing * 4) ($base-spacing * 2);
+        }
+        ul {
+          list-style: none;
+          li {
+            list-style-type: none;
+            margin: 0 0 $base-spacing;
+            span {              
+              display: inline-block;
+              font-weight: 600;
+              padding: 0 5px 0 0;
+            }
+            a {
+              color: $white;
+              text-decoration: underline;
+              &:focus,
+              &:hover {
+                text-decoration: none;
+              }
+            }
+          }
+        }
+      }
+      hr {
+        border-top-color: #d25b1a;
+        margin: ($base-spacing * 3) (-($base-spacing * 2));
+        position: relative;
+      }
+    }
+  }
+}
