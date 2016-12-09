@@ -18,6 +18,9 @@ $gray-lightest:                              #f7f7f9 !default;
 $brand-primary:                              $dusty-orange;
 $text-color:                                 #333;
 
+//=== Body
+$body-bg:               										 #f7f7f7 !default;
+
 //=== Fonts
 $font-family-sans-serif:                    'Myriad Pro Regular', sans-serif;
 $font-size-base:                            14px;
@@ -38,5 +41,5 @@ $navbar-inverse-link-color:                 $text-color;
 $navbar-inverse-link-active-bg:             $dusty-orange;
 
 //=== Footer 
-$footer-bg:																	#f3f3f3;
+$footer-bg:																	#f7f7f7;
 
